@@ -80,6 +80,6 @@ function calculateLargestCategory() {
   return maxCat;
 }
 
-echo
+
 
 

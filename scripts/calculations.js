@@ -80,6 +80,18 @@ function calculateLargestCategory() {
   return maxCat;
 }
 
+function addExpenseEntry(entry) {
+  if (!Array.isArray(entry) || entry.length !== 2) return;
 
+  const [category, rawAmount] = entry;
+  const amount = Number(rawAmount);
+
+  if (!CATEGORIES.includes(category)) return;
+  if (Number.isNaN(amount) || amount <= 0) return;
+
+  expenseEntries.push([category, amount]);
+  totalExpensesValue += amount; 
+  updateBalanceColor();
+}
 
 

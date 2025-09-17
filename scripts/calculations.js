@@ -52,7 +52,7 @@ function updateBalanceColor() {
   }
   return balanceColor;
 }
-updateBalanceColor();
+//updateBalanceColor();
 
 
 function calculateCategoryExpenses(categoryName) {
